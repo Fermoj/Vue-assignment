@@ -1,0 +1,24 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* background: linear-gradient(135deg, red, brown);
+  background-image: url(../images/background-gradient.png); */
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 254, 250, var(--tw-bg-opacity));
+  background-image: url(img/background-gradient.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+* {
+  --one: #efefef;
+  --two: #bbb7c6;
+  --three: #8a8c99;
+  --four: #ea9755;
+  --six: #efc81a;
+  --seven: #07549e;
+  --eight: #ffd99a;
+}

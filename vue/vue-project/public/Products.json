@@ -1,0 +1,53 @@
+[
+    {
+        "id":"1",
+        "product":"Banan",
+        "price":"15 /kg"
+
+    },
+    {
+        "id":"2",
+        "product":"Jordgubbar",
+        "price":"15 /kg"
+    },
+    {
+        "id":"3",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"4",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"5",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"6",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"7",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"8",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"9",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    },
+    {
+        "id":"10",
+        "product":"Apelsin",
+        "price":"15 /kg"
+    }
+]
