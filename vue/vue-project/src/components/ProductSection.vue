@@ -2,7 +2,7 @@
   <!-- Column -->
   <div class="col">
     <div class="card" style="width: 20rem">
-      <img src="../assets/img/Cherry.png" class="card-img-top" alt="..." />
+      <img :src="image" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">{{ articles.product }}</h5>
         <p class="card-text">
@@ -23,10 +23,10 @@ export default {
       type: Object
     },
   },
-// data() {
-//     return {
-//       image: "../assets/img/Cherry.png",
-//     }
-//   }
+data() {
+    return {
+      image: "../assets/img/Cherry.png",
+    }
+  }
 }
 </script>
