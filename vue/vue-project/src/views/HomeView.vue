@@ -1,19 +1,21 @@
 <script setup>
 import HeroImage from "../components/HeroImage.vue";
 import ProductSection from "../components/ProductSection.vue";
+import SliderImage from "../components/SliderImage.vue";
 //lägg till resterande komponenter som tillhör startsidan
 </script>
 <template>
   <HeroImage />
+  <p class="title-hero">{{ titleHero }}</p>
+  <SliderImage />
+  <!-- Cards -->
   <div class="container text-center">
     <div class="row align-items-start">
       <div class="articles">
-        <product-section
-          v-for="product in products"
-          :key="product.id"
-          :articles="product"
-        />
+        <div class="col-3" v-for="product in products" :key="product.id">
+          <product-section :articles="product" />
         <!-- articles variabel som skickar info till productsection -->
+      </div>
       </div>
     </div>
   </div>
@@ -23,20 +25,43 @@ export default {
   data() {
     return {
       products: [],
+      titleHero: `Knowledge is knowing a tomato is a fruit,
+      wisdom is not putting it in a fruit salad`,
     };
   },
-  //   name: "HomeView",
+  name: "HomeView",
   components: { "product-section": ProductSection },
   created() {
     this.fetchData();
   },
   methods: {
     async fetchData() {
-        const response = await fetch("Products.json");
-        const result = await res.json()
-        this.products = result;
-
-    },
-  },
+        try{
+      const res = await fetch("Products.json");
+      const result = await res.json();
+      this.products = result;
+    } catch (error){console.error(error)
+    this.errorMessage= "Products failed to fetch, please try again!" }
+  }},
 };
 </script>
+<style>
+.title-hero {
+ white-space: pre-wrap;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  font-family: cursive;
+  color: #556290;
+  font-style: italic;
+  font-size: x-large;
+}
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+</style>

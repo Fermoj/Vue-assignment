@@ -1,11 +1,9 @@
-<script></script>
+<script>
+</script>
 <template>
   <div id="wrapper-hero">
-    <img src="../assets/img/Kiwi.png" alt="Fruits" />
-    <p class="title-hero">
-      “Knowledge is knowing a tomato is a fruit;<br />
-      wisdom is not putting it in a fruit salad"
-    </p>
+    <img src="/public/img/Kiwi.png" alt="Fruits" />
+
   </div>
 </template>
 <style scoped>
@@ -14,13 +12,5 @@ img {
   display: flex;
   justify-content: right;
 }
-.title-hero {
-  position: absolute;
-  top: 45%;
-  left: 20%;
-  font-family: cursive;
-  color: #556290;
-  font-style: italic;
-  font-size: x-large;
-}
+
 </style>
