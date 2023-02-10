@@ -43,21 +43,25 @@
     {
         "id":"7",
         "product":"Apelsin",
-        "price":"15 /kg"
+        "price":"15 /kg",
+        "image": "img/Cherry.png"
     },
     {
         "id":"8",
         "product":"Apelsin",
-        "price":"15 /kg"
+        "price":"15 /kg",
+        "image": "img/Cherry.png"
     },
     {
         "id":"9",
         "product":"Apelsin",
-        "price":"15 /kg"
+        "price":"15 /kg",
+        "image": "img/Cherry.png"
     },
     {
         "id":"10",
         "product":"Apelsin",
-        "price":"15 /kg"
+        "price":"15 /kg",
+        "image": "img/Cherry.png"
     }
 ]

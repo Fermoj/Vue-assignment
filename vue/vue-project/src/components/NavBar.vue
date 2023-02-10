@@ -20,10 +20,10 @@ import { RouterLink, RouterView } from "vue-router";
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <RouterLink class="nav-link active" aria-current="page" to="/"
-              >Home</RouterLink>
+              >Hem</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/info">info</RouterLink>
+            <RouterLink class="nav-link" to="/Medlem">Medlemskap</RouterLink>
           </li>
         </ul>
       </div>

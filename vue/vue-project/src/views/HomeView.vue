@@ -1,11 +1,11 @@
 <script setup>
-import HeroImage from "../components/HeroImage.vue";
+import HeroSlider from "../components/HeroSlider.vue";
 import ProductSection from "../components/ProductSection.vue";
-import SliderImage from "../components/SliderImage.vue";
+// import SliderImage from "../components/SliderImage.vue";
 //lägg till resterande komponenter som tillhör startsidan
 </script>
 <template>
-  <HeroImage />
+  <HeroSlider />
   <p class="title-hero">{{ titleHero }}</p>
   <SliderImage />
   <!-- Cards -->
