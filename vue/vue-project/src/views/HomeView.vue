@@ -1,7 +1,6 @@
 <script setup>
 import HeroSlider from "../components/HeroSlider.vue";
 import ProductSection from "../components/ProductSection.vue";
-// import SliderImage from "../components/SliderImage.vue";
 //lägg till resterande komponenter som tillhör startsidan
 </script>
 <template>
@@ -9,16 +8,17 @@ import ProductSection from "../components/ProductSection.vue";
   <p class="title-hero">{{ titleHero }}</p>
   <SliderImage />
   <!-- Cards -->
-  <div class="container text-center">
-    <div class="row align-items-start">
-      <div class="articles">
-        <div class="col-3" v-for="product in products" :key="product.id">
-          <product-section :articles="product" />
-        <!-- articles variabel som skickar info till productsection -->
-      </div>
+  <div id="product-wrapper">
+    <div class="container text-center">
+      <div class="row align-items-start">
+          <div class="col-3" v-for="product in products" :key="product.id">
+            <product-section :articles="product" />
+            <!-- articles: variabel som skickar info till productsection -->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+
 </template>
 <script>
 export default {
@@ -36,18 +36,21 @@ export default {
   },
   methods: {
     async fetchData() {
-        try{
-      const res = await fetch("Products.json");
-      const result = await res.json();
-      this.products = result;
-    } catch (error){console.error(error)
-    this.errorMessage= "Products failed to fetch, please try again!" }
-  }},
+      try {
+        const res = await fetch("Products.json");
+        const result = await res.json();
+        this.products = result;
+      } catch (error) {
+        console.error(error);
+        this.errorMessage = "Products failed to fetch, please try again!";
+      }
+    },
+  },
 };
 </script>
 <style>
 .title-hero {
- white-space: pre-wrap;
+  white-space: pre-wrap;
   position: absolute;
   top: 45%;
   left: 20%;
@@ -56,11 +59,17 @@ export default {
   font-style: italic;
   font-size: x-large;
 }
-.articles {
+/* .articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+} */
+#product-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }

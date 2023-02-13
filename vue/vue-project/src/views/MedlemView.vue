@@ -1,11 +1,12 @@
 <script setup>
 import FormMember from "../components/FormMember.vue";
-import HeroSlider from "../components/HeroSlider.vue";
-
+import NumBer from "../components/NumBer.vue";
 </script>
 <template>
 <FormMember />
-<HeroSlider />
+<NumBer />
 </template>
 
-<style></style>
+<style>
+
+</style>

@@ -1,8 +1,8 @@
 <template>
   <div id="wrapper-hero">
     <div>
-    <img :src="currentImage" alt="Frukt" />
-  </div>
+      <img :src="currentImage" alt="Frukt" />
+    </div>
   </div>
 </template>
 <script>
@@ -10,13 +10,17 @@ export default {
   data() {
     return {
       currentImage: "",
-      images: ["/public/img/Orange.png", "/public/img/Kiwi.png", "/public/img/Wmelon.png"],
+      images: [
+        "/public/img/Orange.png",
+        "/public/img/Kiwi.png",
+        "/public/img/Wmelon.png",
+      ],
       index: 0,
     };
   },
   mounted() {
     // this.currentImage = this.image[0];
-    this.currentImage=this.images[0]
+    this.currentImage = this.images[0];
     this.startSlide();
   },
   methods: {
@@ -28,9 +32,9 @@ export default {
         this.index = (this.index + 1) % this.images.length;
         //set the image at the current index to the currentimage.
         this.currentImage = this.images[this.index];
-      },4000);
+      }, 4000);
     },
-  }
+  },
 };
 </script>
 <style scoped>
@@ -39,5 +43,4 @@ img {
   display: flex;
   justify-content: right;
 }
-
 </style>

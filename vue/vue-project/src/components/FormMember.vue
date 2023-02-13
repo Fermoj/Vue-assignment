@@ -33,9 +33,9 @@
           type="password"
           class="form-control"
           id="exampleInputPassword1"
-          v-model="pWord" />
-          <p v-if="pWord.length < 5"
-        >{{ pwordMsg }}</p>
+          v-model="pWord"
+        />
+        <p v-if="pWord.length < 5">{{ pwordMsg }}</p>
       </div>
       <div class="mb-3 form-check">
         <!-- Style behöver vara bunden till css property -->
@@ -61,7 +61,8 @@
       >
         Logga in
       </button>
-      <br /><br /><p v-if="onClick && pWord.length >5">{{ submitMsg }}</p>
+      <br /><br />
+      <p v-if="onClick && pWord.length > 4">{{ submitMsg }}</p>
     </div>
   </form>
 </template>
@@ -75,14 +76,16 @@ export default {
       pwordMsg: null,
       submitMsg: null,
       checked: false,
-      inputColor: ""
+      inputColor: "",
     };
   },
   methods: {
     onClick(e) {
       e.preventDefault();
+      this.$emit("buttonClicked");
       this.submitMsg = `Välkommen till fruit-familjen ${this.fName}`;
       this.pwordMsg = `Lösenord behöver vara minst 5 bokstäver`;
+      this.$store.commit("increment");
     },
   },
   //computed bevakar om checkbox är ikryssad eller ej och ändrar färg därefter.
@@ -90,7 +93,6 @@ export default {
     boxColor() {
       return this.checked ? "#48bd78" : "#e67470";
     },
-
   },
   watch: {
     pWord(value) {
