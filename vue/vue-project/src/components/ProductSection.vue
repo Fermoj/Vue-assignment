@@ -12,7 +12,7 @@
           class="btn btn-dark"
           @click="onClick"
           type="button"
-          to="/medlem"
+          :to="'/medlem/' + username"
           >Köp</RouterLink
         >
       </div>

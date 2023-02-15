@@ -7,7 +7,7 @@ import ProductSection from "../components/ProductSection.vue";
   <p class="title-hero">{{ titleHero }}</p>
   <SliderImage />
   <!-- Cards -->
-  <h2 class="title-fruits">Populärt just nu</h2>
+  <h2 class="title-fruits"><u>Populärt just nu</u></h2>
   <div id="article-wrapper">
     <div class="container text-center">
       <div class="row">
@@ -24,8 +24,8 @@ export default {
   data() {
     return {
       products: [],
-      titleHero: `Knowledge is knowing a tomato is a fruit,
-      wisdom is not putting it in a fruit salad`,
+      titleHero: `"Knowledge is knowing a tomato is a fruit,
+      wisdom is not putting it in a fruit salad"`,
     };
   },
   name: "HomeView",
