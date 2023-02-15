@@ -24,8 +24,13 @@ import { RouterLink, RouterView } from "vue-router";
             >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/Medlem">Medlemskap</RouterLink>
+            <RouterLink class="nav-link" :to="'/medlem/' + username"
+              >Medlemskap</RouterLink
+            >
           </li>
+          <!-- <li class="nav-item">
+            <RouterLink class="nav-link" to="/recept/banan">Recept</RouterLink>
+          </li> -->
         </ul>
       </div>
     </div>

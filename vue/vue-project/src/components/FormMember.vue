@@ -1,3 +1,6 @@
+<script setup>
+import { useRouter } from "vue-router";
+</script>
 <template>
   <div class="form-wrapper">
     <form>
@@ -86,6 +89,7 @@ export default {
       this.submitMsg = `Välkommen till fruit-familjen ${this.fName}`;
       this.pwordMsg = `Lösenord behöver vara minst 5 bokstäver`;
       this.$store.commit("increment");
+      this.$router.push({name: 'Medlemskap', params:{ userName: this.fName}})
     },
   },
   //computed bevakar om checkbox är ikryssad eller ej och ändrar färg därefter.
