@@ -1,6 +1,6 @@
 <template>
-  <form>
-    <div class="form-wrapper">
+  <div class="form-wrapper">
+    <form>
       <p>&#9752; Inloggning krävs för att komma vidare till kassan</p>
       <p><b>Medlemskaps formulär</b></p>
       <div class="mb-3">
@@ -63,8 +63,8 @@
       </button>
       <br /><br />
       <p v-if="onClick && pWord.length > 4">{{ submitMsg }}</p>
-    </div>
-  </form>
+    </form>
+  </div>
 </template>
 <script>
 export default {
@@ -104,8 +104,9 @@ export default {
 
 <style scooped>
 .form-wrapper {
+  display: flex;
   padding: 5%;
-  width: 40%;
-  /* margin-left: 20%; */
+  margin-right: 50%;
+  width: 50%;
 }
 </style>

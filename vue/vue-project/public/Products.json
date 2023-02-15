@@ -1,67 +1,74 @@
 [
-    {
-        "id":"1",
-        "product":"Banan",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-    },
-    {
-        "id":"2",
-        "product":"Jordgubbar",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-
-    },
-    {
-        "id":"3",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-
-    },
-    {
-        "id":"4",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-
-    },
-    {
-        "id":"5",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-
-    },
-    {
-        "id":"6",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-
-    },
-    {
-        "id":"7",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-    },
-    {
-        "id":"8",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-    },
-    {
-        "id":"9",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-    },
-    {
-        "id":"10",
-        "product":"Apelsin",
-        "price":"15 /kg",
-        "image": "img/Cherry.png"
-    }
+  {
+    "id": "1",
+    "product": "Jordgubbar",
+    "price": "64 /kg",
+    "image": "img/Jordgubbe.jpg"
+  },
+  {
+    "id": "2",
+    "product": "Mandarin",
+    "price": "15 /kg",
+    "image": "img/Mandarin.jpg"
+  },
+  {
+    "id": "3",
+    "product": "Ananas",
+    "price": "15 /kg",
+    "image": "img/Ananas.jpg"
+  },
+  {
+    "id": "4",
+    "product": "Banan",
+    "price": "15 /kg",
+    "image": "img/Banan.jpg"
+  },
+  {
+    "id": "5",
+    "product": "Papaya",
+    "price": "79 /kg",
+    "image": "img/Papaya.jpg"
+  },
+  {
+    "id": "6",
+    "product": "Honungs melon",
+    "price": "69 /kg",
+    "image": "img/Hmelon.jpg"
+  },
+  {
+    "id": "7",
+    "product": "Körsbär",
+    "price": "15 /kg",
+    "image": "img/Cherry.jpg"
+  },
+  {
+    "id": "8",
+    "product": "Blodapelsin",
+    "price": "22 /kg",
+    "image": "img/Blodapelsin.jpg"
+  },
+  {
+    "id": "9",
+    "product": "Apelsin",
+    "price": "15 /kg",
+    "image": "img/Apelsin.jpg"
+  },
+  {
+    "id": "10",
+    "product": "Blåbär",
+    "price": "15 /kg",
+    "image": "img/Blåbär.jpg"
+  },
+  {
+    "id": "11",
+    "product": "Äpple",
+    "price": "15 /kg",
+    "image": "img/Äpple.jpg"
+  },
+  {
+    "id": "12",
+    "product": "Vattenmelon",
+    "price": "15 /kg",
+    "image": "img/Wmelon2.jpg"
+  }
 ]

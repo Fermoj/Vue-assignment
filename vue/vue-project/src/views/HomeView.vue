@@ -1,24 +1,23 @@
 <script setup>
 import HeroSlider from "../components/HeroSlider.vue";
 import ProductSection from "../components/ProductSection.vue";
-//lägg till resterande komponenter som tillhör startsidan
 </script>
 <template>
   <HeroSlider />
   <p class="title-hero">{{ titleHero }}</p>
   <SliderImage />
   <!-- Cards -->
-  <div id="product-wrapper">
+  <h2 class="title-fruits">Populärt just nu</h2>
+  <div id="article-wrapper">
     <div class="container text-center">
-      <div class="row align-items-start">
-          <div class="col-3" v-for="product in products" :key="product.id">
-            <product-section :articles="product" />
-            <!-- articles: variabel som skickar info till productsection -->
-          </div>
+      <div class="row">
+        <div class="col" v-for="product in products" :key="product.id">
+          <product-section :articles="product" />
+          <!-- articles: variabel som skickar info till productsection -->
         </div>
       </div>
     </div>
-
+  </div>
 </template>
 <script>
 export default {
@@ -58,19 +57,19 @@ export default {
   color: #556290;
   font-style: italic;
   font-size: x-large;
+  background-color: rgb(239, 229, 244);
 }
-/* .articles {
+
+#article-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
   margin-top: 10vh;
   margin-bottom: 10vh;
-} */
-#product-wrapper {
+}
+.col {
   display: flex;
-  justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  justify-content: space-around;
+}
+.title-fruits {
+  margin-left: 6%;
 }
 </style>

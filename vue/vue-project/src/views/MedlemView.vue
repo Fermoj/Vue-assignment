@@ -3,10 +3,8 @@ import FormMember from "../components/FormMember.vue";
 import NumBer from "../components/NumBer.vue";
 </script>
 <template>
-<FormMember />
-<NumBer />
+  <FormMember />
+  <NumBer />
 </template>
 
-<style>
-
-</style>
+<style></style>
